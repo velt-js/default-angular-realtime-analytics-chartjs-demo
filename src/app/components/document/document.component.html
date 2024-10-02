@@ -1,0 +1,8 @@
+<main>
+	<velt-comments allowed-element-ids='["acquisitions"]' comment-pin-highlighter="false" area-comment="false"
+		#veltCommentsRef></velt-comments>
+
+	<div style="position: relative" (mousemove)="handleChartClick($event)" class="html-canvas">
+		<div><canvas id="acquisitions" #acquisitions></canvas></div>
+	</div>
+</main>

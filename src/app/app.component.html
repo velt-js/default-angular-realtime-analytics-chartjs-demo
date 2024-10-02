@@ -1,0 +1,32 @@
+<main [class.isFocused]="isFocused">
+	<app-sidebar *ngIf="!isFocused"></app-sidebar>
+
+	<div class="content">
+		<app-toolbar *ngIf="!isFocused"></app-toolbar>
+
+		<div class="chart-info" *ngIf="!isFocused">
+
+			<span>
+				<h1>Acquisition Report</h1>
+				<p>Overview of our company's recent business acquisitions. It includes detailed information on the
+					acquired companies, their market positions, financial performance, and the strategic rationale
+					behind each acquisition.</p>
+			</span>
+			<hr />
+
+			<span class="comment-note">
+				<velt-comment-tool></velt-comment-tool>
+				<p>Add Comments on Graph</p>
+			</span>
+		</div>
+		
+		<span class="comment-note" *ngIf="isFocused">
+			<velt-comment-tool></velt-comment-tool>
+			<p>Add Comments on Graph</p>
+		</span>
+		<app-document></app-document>
+
+	</div>
+</main>
+
+<router-outlet />

@@ -1,0 +1,42 @@
+main {
+	height: 100vh;
+	display: flex;
+	width: 100%;
+	overflow-y: hidden;
+
+	.content {
+		width: 100%;
+
+		.chart-info {
+			padding: 3rem 5rem;
+			padding-bottom: 0px;
+
+			.comment-note {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				gap: 0.5rem;
+
+				p {
+					margin: 0;
+					font-family: monospace;
+				}
+			}
+
+			hr {
+				margin: 2rem 0;
+				border: 1px solid light-dark(var(--light-bg-0), var(--dark-bg-0));
+			}
+
+			span {
+
+				p {
+					margin-top: 1.5rem;
+					opacity: 0.5;
+					line-height: 150%;
+				}
+			}
+		}
+
+	}
+}

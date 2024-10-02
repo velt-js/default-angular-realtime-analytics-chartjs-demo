@@ -1,0 +1,17 @@
+main {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	.html-canvas {
+		width: 100%;
+		margin: 4rem;
+		max-width: 800px;
+		min-width: 320px;
+
+		div {
+			width: 100% !important;
+			max-width: 800px;
+		}
+	}
+}
